@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Spy</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="next">Next</string>
+    <string name="letsspy">Lets Spy</string>
+    <string name="ForgotPassword">Forgot Password</string>
+    <string name="LetsSpy">Lets Spy</string>
+    <string name="RePassword">Re Password</string>
+    <string name="Number">Number</string>
+    <string name="Name">Name</string>
+    <string name="SignUP">Sign Up</string>
+    <string name="SignIn">Sign In</string>
+</resources>
