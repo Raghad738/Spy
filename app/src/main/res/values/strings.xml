@@ -12,4 +12,13 @@
     <string name="Name">Name</string>
     <string name="SignUP">Sign Up</string>
     <string name="SignIn">Sign In</string>
+    <string name="btnSend">Send</string>
+    <string name="fastAdd">Fast Add</string>
+    <string name="sms">Sms</string>
+    <string name="calls">Calls</string>
+    <string name="gbs">Gbs</string>
+
+
+    <string name="returntonumbers">Return To Numbers</string>
+    <string name="search">Search</string>
 </resources>

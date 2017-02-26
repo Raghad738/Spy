@@ -27,6 +27,13 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
+        if (FirebaseAuth.getInstance().getCurrentUser()!=null)
+        {
+            Intent i= new Intent(SignIn.this,AddNumbers.class);
+            startActivity(i);
+            finish();
+        }
+
         etEmail=(EditText)findViewById(R.id.etEmail);
         etPassword=(EditText)findViewById(R.id.etPassword);
         btnForgotPassword=(Button)findViewById(R.id.btnForgotPassword);
@@ -48,26 +55,36 @@ public class SignIn extends AppCompatActivity {
         if (stPassword.length()==0) {
             etPassword.setError("Wrong Password");
             isok = false;}
-            if (isok);
-        SignIn(stEmail,stPassword);
+            if (isok)
+                signIn(stPassword,stEmail);
 
 
     }
 
+    /**
+     * puttind event handler for (listeners)
+     */
     private void eventHandlrer()
     {
         btnForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
+
                 dataHandler();
             }
         });
+
         btnLetsSpy.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
+                Intent i= new Intent(SignIn.this, AddNumbers.class);
+                startActivity(i);
 
             }
         });
+        dataHandler();
     }
     private void signIn(String email, String passw) {
 
@@ -107,7 +124,5 @@ public class SignIn extends AppCompatActivity {
 
         });
     }
-
-
 
 }
